@@ -47,7 +47,7 @@ def list_devices():
         global LOGITECH_DEVICES
         LOGITECH_DEVICES = RESULT["value"]
     else:
-        print(f"Error: no Logitech devices found")
+        print("Error: no Logitech devices found")
 
 def get_device_info(unitId):
     asyncio.get_event_loop().run_until_complete(send_ws_msg("get","device",{"unitId":unitId}))

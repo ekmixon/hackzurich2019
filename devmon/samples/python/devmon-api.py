@@ -17,10 +17,10 @@ print ("Devices list")
 logidevmon.list_devices()
 for device in logidevmon.LOGITECH_DEVICES:
     print (f"{device['unitId']} {device['type']} : {device['name']}")
-    
+
     if (device["type"] == "keyboard"):
         keyboardUnitId = device['unitId']
-    
+
     if (device["type"] == "mouse"):
         mouseUnitId = device['unitId']
 
